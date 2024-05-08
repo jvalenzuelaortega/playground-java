@@ -1,13 +1,13 @@
 package org.example;
 
-import org.example.dtos.Product;
+import org.example.general.dtos.Product;
 import org.json.JSONArray;
 import org.json.JSONObject;
 
 import java.util.List;
 
 import static org.example.json.JsonUtils.*;
-import static org.example.utils.JsonStringUtils.buildJsonString;
+import static org.example.general.utils.JsonStringUtils.buildJsonString;
 
 public class MainJson {
 

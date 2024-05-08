@@ -1,4 +1,4 @@
-package org.example.dtos;
+package org.example.general.dtos;
 
 public class Rating {
     private long rating;

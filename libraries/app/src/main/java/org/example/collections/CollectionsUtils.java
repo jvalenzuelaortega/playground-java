@@ -1,7 +1,7 @@
 package org.example.collections;
 
-import org.example.dtos.Product;
-import org.example.dtos.Rating;
+import org.example.general.dtos.Product;
+import org.example.general.dtos.Rating;
 
 import java.util.ArrayList;
 import java.util.List;

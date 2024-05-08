@@ -1,7 +1,7 @@
 package org.example.json;
 
-import org.example.dtos.Product;
-import org.example.dtos.Rating;
+import org.example.general.dtos.Product;
+import org.example.general.dtos.Rating;
 import org.json.JSONArray;
 import org.json.JSONObject;
 

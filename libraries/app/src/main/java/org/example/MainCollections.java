@@ -1,7 +1,7 @@
 package org.example;
 
 import org.example.collections.CollectionsUtils;
-import org.example.dtos.Product;
+import org.example.general.dtos.Product;
 
 import java.util.List;
 import java.util.Optional;
