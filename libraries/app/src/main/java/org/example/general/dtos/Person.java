@@ -1,7 +1,5 @@
 package org.example.general.dtos;
 
-import java.time.LocalDate;
-
 public class Person {
 
     private String name;

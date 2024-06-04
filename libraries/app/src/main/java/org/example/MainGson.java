@@ -5,7 +5,6 @@ import org.example.general.dtos.Person;
 import org.example.general.dtos.Product;
 import org.example.general.dtos.Rating;
 
-import java.time.LocalDate;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -23,11 +22,6 @@ public class MainGson {
         String json = "{\"name\":\"John\",\"age\":30}";
         Person person1 = gson.fromJson(json, Person.class);
         System.out.println("Person Object : " +person1.getName() + " " + person1.getAge());
-
-        //TODO: convert to JSON from object with LocalDate
-        LocalDate localDate = LocalDate.now();
-        /*String jsonResultLocalDate = gson.toJson(localDate);
-        System.out.println("JSON Object : " +jsonResultLocalDate);*/
         
         //TODO: convert Collection to JSON
         List<Person> personList = new ArrayList<>();
