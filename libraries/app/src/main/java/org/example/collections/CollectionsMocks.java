@@ -6,7 +6,7 @@ import org.example.general.dtos.Rating;
 import java.util.ArrayList;
 import java.util.List;
 
-public class CollectionsUtils {
+public class CollectionsMocks {
 
     public static List<Product> buildListOfProducts() {
         List<Product> products = new ArrayList<>();

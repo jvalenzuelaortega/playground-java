@@ -1,6 +1,6 @@
 package org.example;
 
-import org.example.collections.CollectionsUtils;
+import org.example.collections.CollectionsMocks;
 import org.example.general.dtos.Product;
 
 import java.util.List;
@@ -12,7 +12,7 @@ public class MainCollections {
     public static void main(String[] args) {
 
         //TODO: base list
-        List<Product> productList = CollectionsUtils.buildListOfProducts();
+        List<Product> productList = CollectionsMocks.buildListOfProducts();
 
         //TODO: filter for value
         List<Product> productsFilterList = productList.stream()
