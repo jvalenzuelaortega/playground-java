@@ -14,20 +14,6 @@ public class MainCollections {
         //TODO: base list
         List<Product> productList = CollectionsMocks.buildListOfProducts();
 
-        //TODO: filter for value
-        List<Product> productsFilterList = productList.stream()
-                .filter(p -> p.getName().equals("Trial Product"))
-                .collect(Collectors.toList());
-
-        System.out.println("[Filter list :]" + productsFilterList);
-
-        //TODO: filter for value range
-        List<Product> productsFilterListRange = productList.stream()
-                .filter(p -> Integer.parseInt(p.getPrice()) < 900)
-                .collect(Collectors.toList());
-
-        System.out.println("[Filter list with range :]" + productsFilterListRange);
-
         //TODO: filter for 2 values
         List<Product> productsFilterListRangeAndDiscount = productList.stream()
                 .filter(p -> Integer.parseInt(p.getPrice()) < 900 && (p.getDiscountPercentage() > 5 && p.getDiscountPercentage() <= 10))

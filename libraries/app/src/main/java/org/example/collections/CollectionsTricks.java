@@ -20,4 +20,13 @@ public class CollectionsTricks {
         return productsFilterList;
     }
 
+    public List<Product> filterProductListForRange() {
+        List<Product> productsFilterListRange = productsList.stream()
+                .filter(p -> Integer.parseInt(p.getPrice()) < 900)
+                .collect(Collectors.toList());
+
+        return productsFilterListRange;
+
+    }
+
 }
