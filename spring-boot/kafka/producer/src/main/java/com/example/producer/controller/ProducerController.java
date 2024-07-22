@@ -9,7 +9,7 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 public class ProducerController {
 
-    private PublishService publishService;
+    private final PublishService publishService;
 
     public ProducerController(PublishService publishService) {
         this.publishService = publishService;
