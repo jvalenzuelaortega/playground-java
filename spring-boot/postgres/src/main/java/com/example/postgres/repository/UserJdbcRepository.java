@@ -16,7 +16,7 @@ public class UserJdbcRepository {
         this.jdbcTemplate = jdbcTemplate;
     }
 
-    public List<UserDto> getUsers(){
+    public List<UserDto> getUsers() {
         String sql = "select * from users";
         List<UserDto> userDtoList = jdbcTemplate.query(sql, new BeanPropertyRowMapper<>(UserDto.class));
         return userDtoList;

@@ -67,9 +67,9 @@ class MainJdbcOperationsControllerTest {
 
         // Act
         this.mockMvc.perform(post("/insert-user")
-                .content(mockJsonUserDto())
-                .contentType(MediaType.APPLICATION_JSON)
-                .accept(MediaType.APPLICATION_JSON))
+                        .content(mockJsonUserDto())
+                        .contentType(MediaType.APPLICATION_JSON)
+                        .accept(MediaType.APPLICATION_JSON))
                 .andExpect(status().isOk())
                 .andExpect(content().string(containsString("anyways")));
 
@@ -84,9 +84,9 @@ class MainJdbcOperationsControllerTest {
 
         // Act
         this.mockMvc.perform(post("/update-user").param("user_id", "1")
-                .content(mockJsonUserDto())
-                .contentType(MediaType.APPLICATION_JSON)
-                .accept(MediaType.APPLICATION_JSON))
+                        .content(mockJsonUserDto())
+                        .contentType(MediaType.APPLICATION_JSON)
+                        .accept(MediaType.APPLICATION_JSON))
                 .andExpect(status().isOk())
                 .andExpect(content().string(containsString("anyways")));
 
